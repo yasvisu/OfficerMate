@@ -1,0 +1,26 @@
+﻿<Window x:Class="OfficerMate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="OfficerMate" Height="557" Width="673">
+    <Grid>
+
+        <Button Name="CopySloganButton" Content="Copy" Margin="0,10,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="100" Height="100" Background="BlueViolet" Click="CopySloganButton_Click"/>
+        <Button Name="RandomSloganButton" Content="Random" Margin="0,115,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="100" Height="100" Background="RosyBrown" Click="RandomSloganButton_Click"/>
+        <Button Name="SaveButton" Content="Save" Margin="0,220,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="100" Height="69" Background="Aquamarine" Click="SaveButton_Click"/>
+        <Button Name="LoadButton" Content="Load" Margin="0,294,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="100" Height="69" Background="DarkSlateBlue" Click="LoadButton_Click"/>
+
+
+        <Button Name="RollDiceButton" Content="Roll" Margin="0,0,10,9" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="100" Height="100" Background="GreenYellow"/>
+        <Button Name="InsertButton" Content="Insert" Margin="10,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="100" Height="100" Background="Plum" Click="InsertButton_Click"/>
+        <Button Name="RemoveButton" Content="Remove" Margin="115,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="100" Height="100" Background="BurlyWood" Click="RemoveButton_Click"/>
+        
+        
+        <ListBox Name="SloganListBox" HorizontalAlignment="Stretch" Height="Auto" Margin="10,10,115,164" VerticalAlignment="Stretch" Width="Auto" SelectionMode="Extended"/>
+        
+        
+        <TextBox Name="SloganInputBox" HorizontalAlignment="Stretch" Height="44" Margin="10,336,115,114" TextWrapping="Wrap" AcceptsReturn="True" Text="Baba" VerticalAlignment="Bottom" Width="Auto"/>
+        <TextBox Name="RollerInputBox" HorizontalAlignment="Stretch" Height="99" Margin="220,0,115,10" TextWrapping="Wrap" AcceptsReturn="True" Text="Roller" VerticalAlignment="Bottom" Width="Auto"/>
+
+
+    </Grid>
+</Window>
